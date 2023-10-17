@@ -36,6 +36,8 @@ console.log(intArray)
 
 numbersDOMElement.innerHTML += intArray
 
+let numeriUtente
+
 
 setTimeout (clearHtml,2800);
 
@@ -52,7 +54,7 @@ function after30Seconds () {
     
     
     
-    let numeriUtente = []
+    numeriUtente = []
     
 
     while (numeriUtente.length <= 4) {
@@ -65,4 +67,5 @@ function after30Seconds () {
    
    
 }
+
 

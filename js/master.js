@@ -40,14 +40,16 @@ function after30Seconds() {
 
         const numeriUtente = chiediNumeri();
         console.log(numeriUtente);
+
+        
     }, 300);
 
 }
 
-function clearHtml() {
-    numbersDOMElement.innerHTML = 'Tempo Scaduto';
-    console.log(numbersDOMElement.innerHTML);
-}
+// function clearHtml() {
+//     numbersDOMElement.innerHTML = 'Tempo Scaduto';
+//     console.log(numbersDOMElement.innerHTML);
+// }
 
 // DOM ELEMENYS : 
 let numbersDOMElement = document.getElementById('numbers__p')

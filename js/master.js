@@ -31,15 +31,26 @@ console.log(intArray)
 
 // APP JS: 
 
+
 // let numeriUtente = []
 
 numbersDOMElement.innerHTML += intArray
+
+
+setTimeout (clearHtml,2800);
+
+function clearHtml () {
+
+numbersDOMElement.innerHTML = 'ricordali bene'
+   
+   
+}
 
 setTimeout (after30Seconds,3000);
 
 function after30Seconds () {
     
-    numbersDOMElement.innerHTML = 'ricordali bene'
+    
     
     let numeriUtente = []
     

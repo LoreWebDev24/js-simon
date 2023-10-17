@@ -41,7 +41,7 @@ setTimeout (clearHtml,2800);
 
 function clearHtml () {
 
-numbersDOMElement.innerHTML = 'ricordali bene'
+numbersDOMElement.innerHTML = 'Tempo Scaduto'
    
    
 }

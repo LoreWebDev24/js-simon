@@ -31,4 +31,27 @@ console.log(intArray)
 
 // APP JS: 
 
+// let numeriUtente = []
+
 numbersDOMElement.innerHTML += intArray
+
+setTimeout (after30Seconds,3000);
+
+function after30Seconds () {
+    
+    numbersDOMElement.innerHTML = 'ricordali bene'
+    
+    let numeriUtente = []
+    
+
+    while (numeriUtente.length <= 4) {
+        numeroPrompt = parseInt(prompt('Inserisi uno dei 5 numeri visti'))
+        numeriUtente.push(numeroPrompt)
+        console.log(numeriUtente) 
+    }
+    
+    return numeriUtente
+   
+   
+}
+

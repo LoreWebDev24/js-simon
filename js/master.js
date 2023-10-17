@@ -42,30 +42,32 @@ function after30Seconds() {
         console.log(numeriUtente);
 
         for (i=0; i<=4 ; i++){
-            currentNumeroUtente = numeriUtente[i]
-            console.log(currentNumeroUtente)
+    
             currentNumberArray = intArray[i]
             console.log(currentNumberArray)
 
+            for (n=0; n<=4 ; n++ ) { 
 
-            if (currentNumeroUtente === currentNumberArray){
-                arrayNumeriRicordati.push(currentNumeroUtente)
-                console.log(arrayNumeriRicordati)
-                rememberedNumbersDOMElement.innerHTML = "I numeri ricordati sono:" + arrayNumeriRicordati
-            }
-            
-            if (arrayNumeriRicordati.length == 0) {
-            rememberedNumbersDOMElement.innerHTML = "Hai Perso!!! Premi F5 per ricaricare"
+                currentNumeroUtente = numeriUtente[n]
+                console.log(currentNumeroUtente)
+    
+                if (currentNumeroUtente === currentNumberArray){
+                    arrayNumeriRicordati.push(currentNumeroUtente)
+                    console.log(arrayNumeriRicordati)
+                }
+    
+                if (intArray.includes(currentNumeroUtente)) {
+                    rememberedNumbersDOMElement.innerHTML = "I numeri ricordati sono:" + arrayNumeriRicordati
+                }
+                
+                if (arrayNumeriRicordati.length == 0) {
+                rememberedNumbersDOMElement.innerHTML = "Hai Perso!!! Premi F5 per ricaricare"
+                }
             }
         }
     }, 300);
-
 }
 
-// function clearHtml() {
-//     numbersDOMElement.innerHTML = 'Tempo Scaduto';
-//     console.log(numbersDOMElement.innerHTML);
-// }
 
 // DOM ELEMENYS : 
 let numbersDOMElement = document.getElementById('numbers__p')

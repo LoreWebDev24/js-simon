@@ -41,7 +41,23 @@ function after30Seconds() {
         const numeriUtente = chiediNumeri();
         console.log(numeriUtente);
 
-        
+        for (i=0; i<=4 ; i++){
+            currentNumeroUtente = numeriUtente[i]
+            console.log(currentNumeroUtente)
+            currentNumberArray = intArray[i]
+            console.log(currentNumberArray)
+
+
+            if (currentNumeroUtente === currentNumberArray){
+                arrayNumeriRicordati.push(currentNumeroUtente)
+                console.log(arrayNumeriRicordati)
+                rememberedNumbersDOMElement.innerHTML = "I numeri ricordati sono:" + arrayNumeriRicordati
+            }
+            
+            if (arrayNumeriRicordati.length == 0) {
+            rememberedNumbersDOMElement.innerHTML = "Hai Perso!!! Premi F5 per ricaricare "
+            }
+        }
     }, 300);
 
 }
@@ -58,16 +74,20 @@ console.log(numbersDOMElement)
 let intArray = getRandomArrayOfInts(1, 100, 5)
 console.log(intArray)
 
+let rememberedNumbersDOMElement = document.getElementById('remembered-numbers')
+
 
 // APP JS: 
 
 
 numbersDOMElement.innerHTML += intArray
 
-const delay = 5;
+const delay = 10;
 
 
 setTimeout(after30Seconds, delay * 1000);
+
+let arrayNumeriRicordati = []
 
 
 

@@ -25,7 +25,7 @@ function chiediNumeri() {
     numeriUtente = [];
 
     while (numeriUtente.length <= 4) {
-        numeroPrompt = parseInt(prompt('Inserisi uno dei 5 numeri visti'));
+        numeroPrompt = parseInt(prompt('Inserisi in ordine i 5 numeri visti'));
         numeriUtente.push(numeroPrompt);
         console.log(numeriUtente);
     }
@@ -55,7 +55,7 @@ function after30Seconds() {
             }
             
             if (arrayNumeriRicordati.length == 0) {
-            rememberedNumbersDOMElement.innerHTML = "Hai Perso!!! Premi F5 per ricaricare "
+            rememberedNumbersDOMElement.innerHTML = "Hai Perso!!! Premi F5 per ricaricare"
             }
         }
     }, 300);

@@ -59,7 +59,7 @@ function after30Seconds() {
                 }
     
                 if (intArray.includes(currentNumeroUtente)) {
-                    rememberedNumbersDOMElement.innerHTML = "I numeri ricordati sono:" + arrayNumeriRicordati
+                    rememberedNumbersDOMElement.innerHTML = "I numeri ricordati sono:" + arrayNumeriRicordati + " " + "il tuo score e' : " + arrayNumeriRicordati.length
                 }
                 
                 if (arrayNumeriRicordati.length == 0) {

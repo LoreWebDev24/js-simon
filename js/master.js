@@ -24,10 +24,12 @@ function getRandomArrayOfInts(minRange, maxRange, number) {
 function chiediNumeri() {
     numeriUtente = [];
 
-    while (numeriUtente.length <= 4) {
+    for (let i = 0; i < 5; i++) {
         numeroPrompt = parseInt(prompt('Inserisi in ordine i 5 numeri visti'));
-        numeriUtente.push(numeroPrompt);
-        console.log(numeriUtente);
+        if (!numeriUtente.includes(numeroPrompt)) {
+            numeriUtente.push(numeroPrompt);
+            console.log(numeriUtente);
+        }
     }
 
     return numeriUtente;
@@ -69,7 +71,7 @@ function after30Seconds() {
 }
 
 
-// DOM ELEMENYS : 
+// DOM ELEMENTS : 
 let numbersDOMElement = document.getElementById('numbers__p')
 console.log(numbersDOMElement)
 
